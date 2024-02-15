@@ -1,26 +1,16 @@
 import random
 def jogar():
 
-    print("**********************************************")
-    print("***       BEM VINDO AO JOGO DE FORCA       ***")
-    print("**********************************************")
+    abertura()
+    palavra_secreta = selecionaPalavra('waves.txt')
 
-    # list de palavras possiveis de serem sorteadas para o jogo
-    palavras_secretas = []
-    with open('waves.txt','r') as linhas:
-        for linha in linhas:
-            palavras_secretas.append(linha.strip())
-    print(palavras_secretas)
-    palavra_secreta = palavras_secretas[(random.randrange(0,len(palavras_secretas)))-1]
-    print("a palavra secreta é: "+palavra_secreta)
-    
     # condicoes basicas de flow
     enforcou = False
     acertou = False
-
     erros = 0
     max_erros = 5
-    # inicia uma palavra, nao é necessario mas da clareza no codigo
+
+    # inicia uma palavra, nao é necessario mas oferece clareza ao codigo
     palavra_adivinhada = ""
 
     # contagem para saber se a palavra tem espacos dentro
@@ -66,6 +56,22 @@ def jogar():
             enforcou = True
             print("Fim do jogo você perdeu!")
 
+def abertura():
+    print("**********************************************")
+    print("***       BEM VINDO AO JOGO DE FORCA       ***")
+    print("**********************************************")
+
+def selecionaPalavra(file):
+    # list de palavras possiveis de serem sorteadas para o jogo
+    palavras_secretas = []
+    with open(file,'r') as linhas:
+        for linha in linhas:
+            palavras_secretas.append(linha.strip())
+
+    palavra_secreta = palavras_secretas[(random.randrange(0,len(palavras_secretas)))-1]
+    #print("a palavra secreta é: "+palavra_secreta)
+
+    return palavra_secreta
 
 if (__name__ == "__main__"):
     jogar()
