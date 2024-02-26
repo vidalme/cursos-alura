@@ -1,1 +1,3 @@
-Repo para todos os curso da alura na trilha devops conduzidos pelo Grupo Boticario + Alura
+# Trilha Devops Boticario e Alura
+
+Repo para manter os trabalhos feitos durante a trilha devops conduzidos pelo Grupo Boticario + Alura
