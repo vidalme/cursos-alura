@@ -1,0 +1,19 @@
+Important commands
+
+adduser - (script that uses useradd to make user creation simpler but more limited).
+
+useradd - creates user(s)
+
+/etc/default/useradd -> file that has some default values whenever a new user is created with useradd
+
+-m -> includes a home directory for the user created
+-r -> let linux know this is a system user
+
+userdel - deletes a user
+
+-r -> deletes also the home directory
+
+
+
+
+passwd -> changes the password
