@@ -20,8 +20,8 @@
 <hr>
 <h3>04.Roteadores e endereçamento IP</h3>
 <p>Agora sim a coisa vai ficando interessante, estamos criando redes diferentes para conecta-las com roteadores, basicamentes entramos na internet. Criamos uma pequena rede com router e configuramos tudo pela CLI do proprio cisco packet tracer.
-<p>
 <hr>
 <h3>05.Construindo redes locais com servidores</h3>
-
+<p>Realmente para fechar com chave de ouro aprendemos a configurar um servidor passa todos os setores acessarem informacoes da empresa e tambem  um servidor DNS para facilitar o acesso pelo nome de dominio ao inves do IP
+<p>Conectamos tudo isso a um novo switch e por sua vez ao roteador, o curso optou por usar IP estatico para essa area da nossa netwrk :
 
