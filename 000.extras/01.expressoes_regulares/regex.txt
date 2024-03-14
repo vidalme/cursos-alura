@@ -1,0 +1,16 @@
+Position	Name	Nation	Steps Won
+1°	Kelly Slater	 United States	56
+2°	Tom Curren	 United States	33
+3°	Tom Carroll	 Australia	26
+4°	Mick Fanning	 Australia	22
+5°	Andy Irons	 Hawaii	20
+6°	Damien Hardman	 Australia	19
+7°	Gabriel Medina	 Brazil	18
+8°	Barton Lynch	 Australia	17
+8°	Mark Richards	 Australia	17
+8°	Filipe Toledo	 Brazil	17
+10°	Martin Potter	 United Kingdom	16
+12°	Joel Parkinson	 Australia	12
+12°	Mark Occhilupo	 Australia	12
+12°	Cheyne Horan	 Australia	12
+12°	Shaun Tomson	 South Africa	12
