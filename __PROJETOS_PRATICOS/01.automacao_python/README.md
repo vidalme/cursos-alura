@@ -2,9 +2,8 @@
 
 https://docs.google.com/document/d/1TKWtE9-2tH8v9-H_ahCH04DlHizMDq3Cc-8ZGo77YCo/edit
 
-<p style='font-size:1.8rem;color:gold'>Data limite de entrega: 26/04 às 23:59 horas
+<p style='font-size:1.8rem;color:gold'>Deadline -> 26/04 às 23:59 horas
 <p>Link de entrega: https://forms.gle/ZJopyXdvf4d1uF9h7
-
 
 <h2>Automação de Rotinas em Ambiente Linux</h2>
 
