@@ -5,7 +5,7 @@
 <br>
 <li> <b>Backup de logs</b>
     <ul>
-        <li>outras coisas</li>
+        <li>Download de logs de varios servidores parseados e organizados em diretorios e enviados a um para um s3</li>
         <li>rodar cada 60 minutos</li>
     </ul>
 </li>

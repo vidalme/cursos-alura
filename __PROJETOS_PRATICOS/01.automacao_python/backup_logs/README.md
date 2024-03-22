@@ -53,6 +53,3 @@ Implementar a funcionalidade básica de registro para rastrear a execução do s
 <li>Estenda o script para lidar com diferentes formatos de log (por exemplo, backups separados para diferentes tipos de log).
 <li>Integre-se com um provedor de armazenamento em nuvem (por exemplo, AWS S3) para backups remotos.
 </ul>
-<br>
-<br>
-<p>Este exercício desafiará suas habilidades em Python, sua compreensão das tarefas de administração de sistema e sua capacidade de projetar soluções robustas e automatizadas para gerenciamento de logs. Lembre-se de consultar a documentação e explorar bibliotecas relevantes para alcançar as funcionalidades desejadas.
