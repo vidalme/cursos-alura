@@ -1,5 +1,0 @@
-Mar 22 00:52:24 secondarylab sshd[5021]: pam_unix(sshd:session): session opened for user vidal(uid=1000) by (uid=0)
-Mar 22 00:52:25 secondarylab sshd[5021]: pam_unix(sshd:session): session closed for user vidal
-Mar 22 01:25:59 secondarylab sshd[5141]: pam_unix(sshd:session): session opened for user vidal(uid=1000) by (uid=0)
-Mar 22 01:26:00 secondarylab sshd[5141]: pam_unix(sshd:session): session closed for user vidal
-Mar 22 01:27:15 secondarylab sshd[5204]: pam_unix(sshd:session): session opened for user vidal(uid=1000) by (uid=0)

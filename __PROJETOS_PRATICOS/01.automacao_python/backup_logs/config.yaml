@@ -1,5 +1,5 @@
 
-destiny: "/tmp/super_logs"
+destiny: "/tmp/reports"
 period: 7
 
 # lista de servidores para fazer back up
