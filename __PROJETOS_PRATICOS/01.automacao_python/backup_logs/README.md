@@ -1,55 +1,62 @@
-<h1>Automatizar Backup de Logs com Python</h1>
+# backup_server_logs
 
-<h3>Cenário</h3>
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-<p>Você gerencia uma frota de servidores web que geram logs críticos.<br>
-Você precisa automatizar o processo de backup desses logs diariamente, com recursos como:
+backup_server_logs é uma ferramenta em Python para automatizar a coleta e backup de logs de servidores remotos.
 
-<ul>
+## Descrição
 
-<li><b>Backups Rotativos:</b><br>
-Manter um número específico de backups diários (por exemplo, manter os últimos 7 dias).
+Este script automatiza o processo de coleta de logs de servidores remotos listados em um arquivo de configuração YAML e os salva localmente em um diretório organizado por servidor e tipo de login (sucesso ou falha). Os logs são então compactados em um arquivo tar.gz para fácil armazenamento e transporte.
 
-<li><b>Compressão:</b><br>
-Compactar os arquivos de log antes do backup para economizar espaço de armazenamento.
+## Pré-requisitos
 
-<li><b>Armazenamento Remoto:</b><br> 
-Carregar os backups compactados para um servidor remoto (por exemplo, servidor SFTP) para segurança.
+- Python 3.x
+- Fabric (instalável via `pip install fabric`)
+- Sistema operacional compatível com as ferramentas utilizadas (journalctl, tar)
 
-<li><b>Tratamento de Erros:</b><br>
-Implementar o tratamento de erros para capturar e relatar problemas durante o processo de backup (por exemplo, falhas de conexão, problemas de espaço em disco).
+## Instalação
 
-<li><b>Registro:</b><br> 
-Implementar a funcionalidade básica de registro para rastrear a execução do script e erros potenciais.
+<h4>1. Clone o repositório:</h4>
 
-</ul>
+```bash
+git clone https://github.com/seu_usuario/backup_server_logs.git
+cd backup_server_logs
+```
 
+<h4>2.Instale as dependências:</h4>
 
-<h3>Requisitos</h3>
-<ul>
-<li>Usar Python para escrever o script.
-<li>Aproveitar bibliotecas para manipulação de arquivos, compressão (por exemplo, gzip), transferência remota de arquivos (por exemplo, paramiko para SFTP) e registro (por exemplo, módulo de registro).
-<li>Configurar o script para aceitar argumentos ou ler configurações de um arquivo de configuração para detalhes como:
-<ul>
-<li>Localização dos diretórios de log nos servidores.
-<li>Número de backups a serem retidos.
-<li>Detalhes do servidor remoto (endereço, nome de usuário, senha/chave).
-<li>Implementar um mecanismo de agendamento (fora do script) para executar o script de backup diariamente (por exemplo, cronjob no Linux).
-</ul>
-</ul>
+```bash
+pip install -r requirements.txt
+```
 
+<h4>3.Configure o arquivo config.yaml com as informações dos servidores e as opções desejadas:</h4>
 
-<h3>Desafio</h3>
-<p><b>Considere os casos em que:</b>
-<ul>
-<li>O que acontece se não houver logs para backup em um dia específico?
-<li>Como você lidará com situações em que o servidor remoto está inacessível?
-<li>Explore técnicas para operações atômicas durante a manipulação de arquivos e processos de backup para garantir a integridade dos dados.
-<li>Pense em implementar um sistema de notificação para alertá-lo sobre qualquer falha de backup.
-</ul>
+<p>O arquivo config.yaml contém as seguintes opções:
 
-<h3>Bônus</h3>
-<ul>
-<li>Estenda o script para lidar com diferentes formatos de log (por exemplo, backups separados para diferentes tipos de log).
-<li>Integre-se com um provedor de armazenamento em nuvem (por exemplo, AWS S3) para backups remotos.
-</ul>
+<b>destiny:</b> diretório onde os logs serão salvos localmente.<br>
+<b>period:</b> número máximo de arquivos de backup que serão mantidos.<br>
+<b>servers:</b> lista de servidores remotos e suas configurações.<br>
+<p>É possível adicionar quantos servidores quiser a lista.
+<p>Exemplo de config.yaml:
+
+```yaml
+destiny: "/path/to/backups"
+period: 5
+servers:
+  - name: "server1"
+    user: "user1"
+    server_ip: "192.168.1.101"
+  - name: "server2"
+    user: "user2"
+    server_ip: "192.168.1.102"
+  - name: "server3"
+    user: "user3"
+    server_ip: "192.168.1.103"   
+```
+
+<h4>4.Contribuindo:</h4>
+<p>Contribuições são bem-vindas, so fazer o PR!
+
+<h4>5.Licença:</h4>
+<p>Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para mais detalhes.
