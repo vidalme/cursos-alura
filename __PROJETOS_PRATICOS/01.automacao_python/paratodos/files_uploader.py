@@ -9,7 +9,7 @@ def usage_message():
     print('''
 #########################################################################  
           
-                    [[   files_uploader.py   ]]
+                    [[   paratodos.py   ]]
           
         Script que recebe um diretorio local e envia todo seu 
         conteudo para outro diretorio remoto em uma lista de 

@@ -3,7 +3,7 @@ import os, subprocess, time
 
 file_name_ending = 'report.txt'
 
-def reporter(saving_directory = '/tmp/reports'):
+def pseport(saving_directory = '/tmp/reports_processes'):
 
     #captura os processos que estao rodando no momento
     b = subprocess.run(['ps','-ar'],capture_output=True)
@@ -34,4 +34,4 @@ def reporter(saving_directory = '/tmp/reports'):
 # cotrole
 if __name__ == "__main__":
     #variaveis ára o nome e local do arquivo de reports
-    reporter()
+    pseport()
