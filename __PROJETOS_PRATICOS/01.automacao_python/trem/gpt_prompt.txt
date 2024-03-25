@@ -1,0 +1,22 @@
+
+Sou tech lead da minha empresa, precisamos cadastrar mais de 500 colaboradores 
+separados por departamento em nosso sistema linux. Todos os dados estão em um xls, com 
+nome do user, nome completo, email, departamento (marketing, financeiro, legal, administrativo ou TI).
+O usuario tambem deve ter um diretorio pessoal no home e expiration date para a 
+senha (a senha tem politica minima de seguranca) 
+
+Preciso descrever essa situação em detalhes para minha equipe produzir o 
+python script para automatizar completamente essa tarefa:
+
+alguns detalhes
+gerar relatorios:
+o script pode gerar relatorios usando uma flag quando chamado, com flags diferentes para mais detalhes
+ - lista dos ultimos usuarios logados
+ - lista de todos os usuarios
+ - lista de usuarios de um grupo especifico
+ - salvar o relatorio em um arquivo .cvs/yaml/.xls   
+
+Esses reklatorios devem ter uma flag para gerar um arquivo em .csv ou .xls
+
+gerar arquivos de log com os erros que houverem
+notificar admins sobre os erros que afetam seguranca
