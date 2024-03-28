@@ -6,5 +6,8 @@
 <li>Implemente um servidor DNS
 <li>Explore as principais características do IPv6
 <li>Configure uma rede de computadores com IPv6
+<br>
+<br>
+<br>
 
 ![alt text](image-7.png)
