@@ -5,7 +5,5 @@
 <li>Proxy reverso
 <li>API Gateway
 <li>Load Balancer
-
-<h3>
-
-![alt text](image.png)
+<br>
+<br>
