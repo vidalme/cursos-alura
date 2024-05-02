@@ -7,3 +7,13 @@
 <li>Load Balancer
 <br>
 <br>
+
+![alt text](image-1.png)
+
+<h3>Conhecendo a ferramenta
+<br><br>
+
+![alt text](image.png)
+
+<h3>Servidor HTTP
+
