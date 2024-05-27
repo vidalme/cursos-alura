@@ -6,4 +6,6 @@
 4. Subindo e testando aplicação
 
 
-**iptables** - firewall de menor porte que faz filtragem por iptables
+**Netfilter** - firewall de menor porte que faz filtragem por iptables
+
+![alt text](image.png)
