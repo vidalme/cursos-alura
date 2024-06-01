@@ -1,0 +1,14 @@
+.venv
+*/random
+**/.env
+**/Desafio.md
+**/test.py
+test.py
+**/alternatives
+alternatives
+reports.tar.gz
+**/reports.tar.gz
+__pycache__
+**/__pycache__
+.ipynb_checkpoints
+**/.ipynb_checkpoints
